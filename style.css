@@ -1,0 +1,385 @@
+/* General Body Styles */
+body {
+    font-family: 'Noto Sans JP', sans-serif; /* 日本語フォントを優先 */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; /* 明るいグレー */
+    color: #333; /* 濃いグレー */
+    overflow-x: hidden; /* 横スクロールバーが出ないように */
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Typography Enhancements */
+h1, h2 {
+    font-family: 'Montserrat', sans-serif; /* タイトルは強調フォント */
+    font-weight: 700;
+}
+
+.slogan {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    color: #e0e0e0; /* 少し明るい色に */
+}
+
+/* Header Styles */
+header {
+    background-color: #2c3e50; /* ダークブルー */
+    color: #fff;
+    padding: 1.5rem 0; /* パディングを少し増やす */
+    text-align: center;
+    position: relative; /* 背景グラデーション用 */
+    overflow: hidden; /* グラデーションの境界を隠す */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%); /* グラデーション背景 */
+    z-index: -1;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem; /* 少し大きく */
+    letter-spacing: 2px; /* 文字間隔を広げる */
+}
+
+/* Section Styles */
+section {
+    padding: 60px 0; /* パディングを増やす */
+    margin-bottom: 30px;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* 影を強調 */
+    border-radius: 10px; /* 角を丸める */
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out; /* ホバーエフェクト用 */
+}
+
+section:hover {
+    transform: translateY(-5px); /* ホバーで少し浮き上がる */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+section:nth-of-type(odd) {
+    background-color: #eaf2f8; /* 明るい青みがかったグレー */
+}
+
+h2 {
+    color: #2980b9; /* 青 */
+    text-align: center;
+    margin-bottom: 40px; /* マージンを増やす */
+    font-size: 2.5rem; /* 少し大きく */
+    border-bottom: 3px solid #2980b9; /* ボーダーを強調 */
+    display: inline-block;
+    padding-bottom: 15px;
+    position: relative; /* 下線アニメーション用 */
+}
+
+h2::after { /* 下線アニメーション */
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -3px;
+    width: 0;
+    height: 3px;
+    background-color: #2ecc71; /* 緑のアクセントカラー */
+    transition: width 0.3s ease-out, left 0.3s ease-out;
+}
+
+section:hover h2::after {
+    width: 100%;
+    left: 0;
+}
+
+/* Hero Section */
+#hero {
+    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); /* グラデーション背景 */
+    color: #fff;
+    text-align: center;
+    padding: 80px 0; /* パディングを増やす */
+    border-radius: 0; /* 角丸を削除 */
+    box-shadow: none; /* 影を削除 */
+}
+
+.hero-image {
+    max-width: 90%; /* 幅を調整 */
+    height: auto;
+    border-radius: 12px; /* 角丸を強調 */
+    margin-bottom: 30px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3); /* 影を強調 */
+    transition: transform 0.5s ease-out; /* アニメーション */
+}
+
+#hero:hover .hero-image {
+    transform: scale(1.02); /* ホバーで少し拡大 */
+}
+
+#hero h2 {
+    color: #fff;
+    border-bottom-color: #fff;
+}
+
+#hero p {
+    font-size: 1.4rem; /* フォントサイズを大きく */
+    max-width: 800px;
+    margin: 0 auto;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3); /* テキストに影 */
+}
+
+/* Image in other sections */
+.section-image {
+    display: block;
+    max-width: 90%;
+    height: auto;
+    margin: 0 auto 40px auto; /* マージンを増やす */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.section-image:hover {
+    transform: scale(1.02); /* ホバーで少し拡大 */
+}
+
+/* List Styles */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #fdfefe; /* 白に近い色 */
+    margin-bottom: 12px; /* マージンを増やす */
+    padding: 20px 25px; /* パディングを増やす */
+    border-left: 6px solid #2980b9; /* ボーダーを強調 */
+    border-radius: 8px; /* 角を丸める */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08); /* 影を強調 */
+    transition: all 0.3s ease; /* ホバーアニメーション */
+}
+
+ul li:hover {
+    transform: translateX(5px); /* ホバーで少し右に移動 */
+    background-color: #e6f0f7; /* ホバーで背景色を変える */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+}
+
+ul li p {
+    margin: 0;
+}
+
+/* Career List Specific Styles */
+.career-list li {
+    border-left-color: #2ecc71; /* 緑のアクセントカラー */
+}
+
+/* Link Styles */
+a {
+    color: #2980b9; /* 青 */
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.2s ease; /* アニメーション追加 */
+}
+
+a:hover {
+    color: #1a5276; /* より濃い青 */
+    text-decoration: underline;
+    transform: translateY(-2px); /* ホバーで少し浮き上がる */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2c3e50; /* ダークブルー */
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0; /* パディングを増やす */
+    margin-top: 50px; /* マージンを増やす */
+    box-shadow: 0 -4px 8px rgba(0,0,0,0.2);
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* ギャップを増やす */
+    margin-top: 15px;
+}
+
+footer nav ul li a {
+    color: #fff;
+    font-size: 1.1rem;
+    position: relative; /* 下線アニメーション用 */
+}
+
+footer nav ul li a::after { /* 下線アニメーション */
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #2ecc71; /* 緑のアクセントカラー */
+    transition: width 0.3s ease-out;
+}
+
+footer nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* New: Highlight and Bold Text */
+.highlight {
+    color: #e74c3c; /* 赤系の強調色 */
+    font-weight: 700;
+}
+
+.bold-text {
+    font-weight: 700;
+}
+
+/* New: Icons */
+.icon {
+    margin-right: 10px;
+    font-size: 1.2em; /* アイコンのサイズ */
+    vertical-align: middle;
+}
+
+/* New: Animations (keyframes) */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInLeft {
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+    from { opacity: 0; transform: translateX(50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+/* Applying animations */
+.fade-in {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.fade-in-up {
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+.slide-in-left {
+    animation: slideInLeft 1s ease-out forwards;
+}
+
+.slide-in-right {
+    animation: slideInRight 1s ease-out forwards;
+}
+
+/* Initial hidden state for animations (to be revealed by JavaScript later if desired, or simply on load) */
+/* For a simple static page, these will just animate on load.
+   For scroll-based animations, you'd typically add/remove these classes with JS. */
+header, #hero, #overview, #learning-points, #career-paths, footer {
+    opacity: 0; /* 初期状態では非表示 */
+}
+
+header { animation-delay: 0.2s; }
+#hero { animation-delay: 0.4s; }
+#overview { animation-delay: 0.6s; }
+#learning-points { animation-delay: 0.8s; }
+#career-paths { animation-delay: 1.0s; }
+footer { animation-delay: 1.2s; }
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    .slogan {
+        font-size: 1.1rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    #hero {
+        padding: 60px 0;
+    }
+
+    #hero h2 {
+        font-size: 2rem;
+    }
+
+    #hero p {
+        font-size: 1.1rem;
+    }
+
+    section {
+        padding: 40px 0;
+    }
+
+    ul li {
+        padding: 15px 20px;
+    }
+
+    footer nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .slogan {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+    }
+
+    #hero {
+        padding: 40px 0;
+    }
+
+    #hero h2 {
+        font-size: 1.8rem;
+    }
+
+    #hero p {
+        font-size: 1rem;
+    }
+
+    ul li {
+        padding: 12px 18px;
+    }
+
+    .icon {
+        font-size: 1em;
+        margin-right: 8px;
+    }
+}
