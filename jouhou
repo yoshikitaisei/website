@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>エネルギー機械コースへようこそ！</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>エネルギー機械コース</h1>
+            <p>未来のエネルギーをデザインする</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="container">
+                <img src="hero-energy.jpg" alt="風力発電と太陽光発電のイメージ" class="hero-image">
+                <h2>地球と社会に貢献するエンジニアを目指そう</h2>
+                <p>エネルギー機械コースでは、持続可能な社会を支えるためのエネルギー技術と機械工学を深く学びます。</p>
+            </div>
+        </section>
+
+        <section id="overview">
+            <div class="container">
+                <h2>コースの概要</h2>
+                <p>本コースでは、熱機関、流体力学、材料科学といった機械工学の基礎に加え、再生可能エネルギー、省エネルギー技術、原子力エネルギーなど、多岐にわたるエネルギー分野の専門知識を習得します。理論と実践をバランス良く学び、社会が求める即戦力となるエンジニアを育成します。</p>
+            </div>
+        </section>
+
+        <section id="learning-points">
+            <div class="container">
+                <h2>学びのポイント</h2>
+                <img src="lab-photo.jpg" alt="実験室での学生たち" class="section-image">
+                <ul>
+                    <li><p><strong>基礎から応用まで</strong>: 機械工学の基礎を固めつつ、最新のエネルギー技術に応用する力を養います。</p></li>
+                    <li><p><strong>多様な専門分野</strong>: 再生可能エネルギー（太陽光、風力、地熱など）、水素エネルギー、スマートグリッドなど、幅広い分野をカバーします。</p></li>
+                    <li><p><strong>実践的な学び</strong>: 豊富な実験や演習、PBL（プロジェクトベース学習）を通じて、問題解決能力と実践力を高めます。</p></li>
+                    <li><p><strong>最先端の研究</strong>: 担当教員による最先端の研究室で、興味のあるテーマを深く掘り下げることができます。</p></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="career-paths">
+            <div class="container">
+                <h2>卒業後の進路</h2>
+                <p>エネルギー機械コースの卒業生は、エネルギー関連企業、重工業、自動車産業、電力会社、プラントエンジニアリング会社など、多岐にわたる分野で活躍しています。</p>
+                <p>具体的な職種例:</p>
+                <ul>
+                    <li><p>再生可能エネルギー開発エンジニア</p></li>
+                    <li><p>発電プラント設計・運用エンジニア</p></li>
+                    <li><p>自動車・航空機エンジン開発エンジニア</p></li>
+                    <li><p>研究開発職（大学、研究機関、企業）</p></li>
+                    <li><p>コンサルタント</p></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 エネルギー機械コース</p>
+            <nav>
+                <ul>
+                    <li><a href="https://example.com/department" target="_blank" rel="noopener noreferrer">関連学科ウェブサイト</a></li>
+                    <li><a href="https://example.com/contact" target="_blank" rel="noopener noreferrer">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
